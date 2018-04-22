@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('messages');
+  this.route('apps');
+  this.route('app', { path: '/apps/:id' });
 });
 
 export default Router;

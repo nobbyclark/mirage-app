@@ -1,0 +1,9 @@
+{{#if model.length}}
+  <ul>
+  {{#each model as |app|}}
+    <li>{{#link-to 'app' app}}{{app.name}}{{/link-to}}</li>
+  {{/each}}
+  </ul>
+{{/if}}
+
+{{outlet}}

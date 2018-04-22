@@ -1,0 +1,7 @@
+<h1>{{model.name}}</h1>
+<h2>Audiences</h2>
+{{#each model.audiences as |audience|}}
+  {{audience.name}}
+{{/each}}
+
+{{outlet}}
